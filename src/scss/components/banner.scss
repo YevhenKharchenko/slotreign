@@ -26,15 +26,16 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   text-align: center;
   color: #1b1b1b;
   margin-bottom: 20px;
 
   @include media(desktop) {
+    font-size: 18px;
     text-align: left;
     max-width: 808px;
     margin-bottom: 0;
@@ -59,14 +60,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #31aaab;
+  background: #06b276;
   padding: 16px 32px;
   border-radius: 50px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
-  color: #2a2a2a;
+  color: #fff;
   width: 100%;
   max-width: 343px;
   transition: background 0.3s ease-in-out;
@@ -74,7 +75,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: #268c8c;
+    background: #08895c;
   }
 
   @include media(desktop) {
@@ -87,13 +88,13 @@
   align-items: center;
   justify-content: center;
   padding: 15px 31px;
-  border: 1px solid #313131;
+  border: 1px solid #161616;
   border-radius: 50px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
-  color: #313131;
+  color: #161616;
   width: 100%;
   max-width: 343px;
   transition:
@@ -103,7 +104,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: #313131;
+    background: #161616;
     color: #fff;
   }
 
