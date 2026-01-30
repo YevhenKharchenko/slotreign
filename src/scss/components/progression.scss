@@ -22,12 +22,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 48px;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
-    gap: 88px;
+    gap: 64px;
   }
 }
 
@@ -43,24 +43,37 @@
 
 .progression-text-wrapper {
   @include media(desktop) {
-    max-width: 584px;
+    max-width: 640px;
   }
 }
 
 .progression-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: #737373;
+  color: #6d6d6d;
+  margin-bottom: 24px;
 
   @include media(desktop) {
     font-size: 18px;
   }
 }
 
+.progression-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #6d6d6d;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
 .progression-img {
   @include media(desktop) {
-    min-width: 640px;
+    min-width: 554px;
   }
 }

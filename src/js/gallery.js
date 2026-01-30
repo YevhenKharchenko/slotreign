@@ -1,9 +1,9 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-let styleSwiper;
+let gallerySwiper;
 
-styleSwiper = new Swiper('.style-swiper-container', {
+gallerySwiper = new Swiper('.gallery-swiper-container', {
   direction: 'horizontal',
   loop: false,
   centeredSlides: false,
@@ -26,7 +26,7 @@ styleSwiper = new Swiper('.style-swiper-container', {
 
   on: {
     init(swiper) {
-      document.querySelector('.style-swiper-container').classList.add('show');
+      document.querySelector('.gallery-swiper-container').classList.add('show');
     },
   },
 });

@@ -3,42 +3,52 @@
     <div class="container boosters-container">
       <div class="boosters-content-wrapper">
         <div class="boosters-text-wrapper">
-          <h2 class="section-title boosters-title">• Boosters</h2>
-          <p class="section-subtitle boosters-subtitle">
-            Smart Tools for Tricky Moments
+          <h2 class="section-title boosters-title">Boosters</h2>
+          <p class="section-subtitle boosters-subtitle">Special Mechanics</p>
+          <p class="boosters-text boosters-top-text">
+            As players progress, special power-ups become available:
           </p>
-          <p class="boosters-text">
-            You’ll earn boosters naturally through play — and trust us, saving
-            them for those “okay this level hates me” moments is a very good
-            idea.
+          <ul class="boosters-list">
+            <li class="boosters-list-item">
+              <p class="boosters-item-text">
+                Line-clearing and area-effect boosters
+              </p>
+            </li>
+            <li class="boosters-list-item">
+              <p class="boosters-item-text">
+                Combo mechanics triggered by large matches
+              </p>
+            </li>
+            <li class="boosters-list-item">
+              <p class="boosters-item-text">
+                Strategic tools to handle difficult board layouts
+              </p>
+            </li>
+          </ul>
+          <p class="boosters-text boosters-bottom-text">
+            You'll pick up boosters along the way, and here's some advice from
+            someone who found out the hard way: save 'em for when you're really
+            stuck.
           </p>
         </div>
-        <ul class="boosters-list">
-          <li class="boosters-list-item">
-            <svg class="check-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-check"></use>
-            </svg>
-            <p class="boosters-item-text">
-              Line-clearing and area-effect power-ups
-            </p>
-          </li>
-          <li class="boosters-list-item">
-            <svg class="check-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-check"></use>
-            </svg>
-            <p class="boosters-item-text">
-              Combo mechanics triggered by smart matches
-            </p>
-          </li>
-          <li class="boosters-list-item">
-            <svg class="check-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-check"></use>
-            </svg>
-            <p class="boosters-item-text">
-              Strategic tools for tricky puzzle layouts
-            </p>
-          </li>
-        </ul>
+        <picture>
+          <source
+            srcset="./img/boosters/boosters-img-desk.png"
+            media="(min-width: 1440px)"
+            width="554"
+            height="490" />
+          <source
+            srcset="./img/boosters/boosters-img-mob.png"
+            width="344"
+            height="304" />
+          <img
+            class="boosters-img"
+            src="./img/boosters/boosters-img-mob.png"
+            alt="Screenshot of the game"
+            width="344"
+            height="304"
+            loading="lazy"
+        /></picture>
       </div>
     </div>
   </div>

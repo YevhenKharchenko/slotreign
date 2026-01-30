@@ -1,17 +1,15 @@
 .boosters-section {
+  @include media(desktop) {
+  }
 }
 
 .boosters-bg-wrapper {
   padding-top: 64px;
   padding-bottom: 64px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
-    max-width: 1440px;
   }
 }
 
@@ -23,25 +21,19 @@
 .boosters-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  box-shadow: 4px 4px 20px 0 rgba(142, 142, 142, 0.25);
-  border-radius: 36px;
-  padding: 40px 40px 400px 40px;
-  background-image: url(../img/boosters/boosters-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
+  align-items: center;
+  gap: 48px;
 
   @include media(desktop) {
-    padding: 40px;
-    background-image: url(../img/boosters/boosters-bg-desk.png);
-    background-position: center right;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 64px;
   }
 }
 
 .boosters-text-wrapper {
   @include media(desktop) {
-    max-width: 616px;
+    max-width: 640px;
   }
 }
 
@@ -56,49 +48,58 @@
 }
 
 .boosters-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: #313131;
+  color: #6d6d6d;
 
   @include media(desktop) {
     font-size: 18px;
   }
 }
 
-.boosters-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.boosters-top-text {
+  margin-bottom: 8px;
 
   @include media(desktop) {
-    max-width: 616px;
+  }
+}
+
+.boosters-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #6d6d6d;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
   }
 }
 
 .boosters-list-item {
-  display: flex;
-  align-items: start;
-  gap: 10px;
-
   @include media(desktop) {
-    max-width: max-content;
   }
 }
 
-.check-icon {
-  min-width: 24px;
-}
-
 .boosters-item-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: #333;
+  color: #6d6d6d;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 18px;
+  }
+}
+
+.boosters-bottom-text {
+  @include media(desktop) {
+  }
+}
+
+.boosters-img {
+  @include media(desktop) {
+    min-width: 554px;
   }
 }

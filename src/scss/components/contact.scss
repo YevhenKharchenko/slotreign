@@ -1,19 +1,24 @@
 .contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
   padding-top: 64px;
   padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/contact/contact-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 120px;
-  }
-}
-
-.contact-content-wrapper {
-  background: linear-gradient(180deg, #a0daf0 0%, #0eaeea 100%);
-  border-radius: 36px;
-  padding: 64px 16px;
-
-  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/contact/contact-bg-desk.jpg);
   }
 }
 
@@ -22,19 +27,39 @@
   }
 }
 
+.contact-content-wrapper {
+  @include media(desktop) {
+    max-width: 640px;
+    margin-left: auto;
+  }
+}
+
 .contact-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  text-transform: uppercase;
   text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
 
   @include media(desktop) {
+    font-size: 42px;
   }
 }
 
 .contact-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
   text-align: center;
-  margin-bottom: 24px;
+  color: #fff;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    margin-bottom: 48px;
+    font-size: 18px;
   }
 }
 
@@ -43,20 +68,19 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #0040ff;
+  color: #adb9b0;
   word-break: break-all;
-  margin-bottom: 8px;
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    font-size: 32px;
+    font-size: 20px;
   }
 }
 
@@ -64,31 +88,26 @@
   min-width: 32px;
 
   @include media(desktop) {
-    min-width: 40px;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.contact-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    font-size: 18px;
-    margin-bottom: 48px;
   }
 }
 
 .contact-btn {
-  max-width: 311px;
+  max-width: 343px;
 
   @include media(desktop) {
-    max-width: 240px;
+    max-width: 220px;
+  }
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+
+  @include media(desktop) {
   }
 }
