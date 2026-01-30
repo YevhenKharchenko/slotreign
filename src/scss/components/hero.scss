@@ -1,0 +1,121 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 374px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 170px;
+    padding-bottom: 107px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 20px 20px 0 rgba(137, 159, 212, 0.4);
+  background: #fff;
+  border: 8px solid #a5bfff;
+  border-radius: 36px;
+  padding: 24px 8px;
+
+  @include media(desktop) {
+    padding: 32px 16px;
+    max-width: 411px;
+  }
+}
+
+.hero-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #313131;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b31b9;
+  border-radius: 50px;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 311px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #122328;
+  }
+
+  @include media(desktop) {
+    max-width: 240px;
+  }
+}
+
+.hero-btn-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.her-btn-top-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ebebeb;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.her-btn-bottom-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ebebeb;
+
+  @include media(desktop) {
+  }
+}

@@ -1,0 +1,138 @@
+.play-section {
+  background: linear-gradient(180deg, #a0daf0 0%, #0eaeea 100%);
+  border-radius: 36px;
+}
+
+.play-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.play-container {
+  @include media(desktop) {
+  }
+}
+
+.play-title {
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+
+.play-subtitle {
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+
+.play-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #313131;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.play-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+}
+
+.play-list-item {
+  box-shadow: 4px 4px 20px 0 rgba(142, 142, 142, 0.25);
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 343px;
+
+  &:nth-child(1) {
+    .play-item-img-wrapper {
+      background: #31aaab;
+    }
+  }
+
+  &:nth-child(2) {
+    .play-item-img-wrapper {
+      background: #6ccd62;
+    }
+  }
+
+  &:nth-child(3) {
+    .play-item-img-wrapper {
+      background: #f8af81;
+    }
+  }
+
+  &:nth-child(4) {
+    .play-item-img-wrapper {
+      background: #3392c2;
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 304px;
+  }
+}
+
+.play-item-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 34px;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.play-img {
+  @include media(desktop) {
+  }
+}
+
+.play-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #222;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

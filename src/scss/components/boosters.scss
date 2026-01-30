@@ -1,0 +1,104 @@
+.boosters-section {
+}
+
+.boosters-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.boosters-container {
+  @include media(desktop) {
+  }
+}
+
+.boosters-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 4px 4px 20px 0 rgba(142, 142, 142, 0.25);
+  border-radius: 36px;
+  padding: 40px 40px 400px 40px;
+  background-image: url(../img/boosters/boosters-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding: 40px;
+    background-image: url(../img/boosters/boosters-bg-desk.png);
+    background-position: center right;
+  }
+}
+
+.boosters-text-wrapper {
+  @include media(desktop) {
+    max-width: 616px;
+  }
+}
+
+.boosters-title {
+  @include media(desktop) {
+  }
+}
+
+.boosters-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.boosters-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #313131;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.boosters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+    max-width: 616px;
+  }
+}
+
+.boosters-list-item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.check-icon {
+  min-width: 24px;
+}
+
+.boosters-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
